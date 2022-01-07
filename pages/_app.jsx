@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../app_modules/mealCard.css';
 
 export default function App({Component, pageProps})
 {
