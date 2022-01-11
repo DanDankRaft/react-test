@@ -1,7 +1,5 @@
-//import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
-import {Row, Col, Container, Card} from 'react-bootstrap';
-import MealCard from '../app_modules/mealCard.jsx'
+import MealCard from '../components/mealCard.jsx'
 
 class HomePage extends React.Component
 {
@@ -13,15 +11,17 @@ class HomePage extends React.Component
     render()
     {
         return(
-            <>
-                <Container>
-                    <Row>
-                        <Col style={{maxWidth: '18rem'}}>
-                            <MealCard />
-                        </Col>
-                    </Row>
-                </Container>
-            </>
+            <div className="flex flex-row">
+                <div className="flex flex-col">
+                    <MealCard />
+                    <MealCard />
+                    <MealCard />
+                </div>
+                <div className="flex flex-col">
+                    <MealCard />
+                    <MealCard />
+                </div>   
+            </div>
             
         );
     }
